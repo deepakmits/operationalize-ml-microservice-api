@@ -1,1 +1,5 @@
-<paste log output from Kubernetes-mediated prediction, here>
+Error from server (AlreadyExists): pods "apidemo" already exists
+NAME      READY   STATUS    RESTARTS   AGE
+apidemo   1/1     Running   0          3m54s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80

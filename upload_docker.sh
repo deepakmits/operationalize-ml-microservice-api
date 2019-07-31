@@ -6,12 +6,14 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-dockerpath=shubhendukumar/api
+dockerpath="shubhendukumar/api"
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login &&\
+    docker image tag api $dockerpath
 
 # Step 3:
 # Push image to a docker repository
-docker push shubhendukumar/api
+docker image push $dockerpath
